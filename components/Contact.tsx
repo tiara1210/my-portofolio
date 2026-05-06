@@ -62,6 +62,7 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors"
                   placeholder="Enter your name"
                   required
+                  suppressHydrationWarning
                 />
               </div>
               <div className="mb-4">
@@ -73,6 +74,7 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors"
                   placeholder="Enter your email"
                   required
+                  suppressHydrationWarning
                 />
               </div>
               <div className="mb-6">
@@ -90,6 +92,7 @@ export default function Contact() {
                 type="submit"
                 disabled={status === 'sending'}
                 className="btn-primary w-full disabled:opacity-50"
+                suppressHydrationWarning
               >
                 {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>

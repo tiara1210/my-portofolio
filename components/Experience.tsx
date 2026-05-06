@@ -1,4 +1,28 @@
+'use client';
+import { useEffect, useState } from 'react';
+
 export default function Experience() {
+  const [visibleCards, setVisibleCards] = useState<number[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute('data-index') || '0');
+            setTimeout(() => {
+              setVisibleCards((prev) => [...prev, index]);
+            }, index * 100);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.experience-card').forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   const experiences = [
     {
       period: "2026 - Present",
@@ -63,8 +87,21 @@ export default function Experience() {
       <div className="container">
         <h2 className="text-4xl font-bold mb-12">Experience</h2>
         <div className="grid grid-2 gap-6">
-          {experiences.map((exp, index) => (
-            <div key={index} className="card experience-card p-6">
+          {experiences.map((exp, index) => {
+            const isLeft = index % 2 === 0;
+            const isVisible = visibleCards.includes(index);
+            return (
+              <div
+                key={index}
+                data-index={index}
+                className={`experience-card card p-6 transition-all duration-500 ${
+                  isVisible
+                    ? 'translate-x-0 opacity-100'
+                    : isLeft
+                    ? '-translate-x-16 opacity-0'
+                    : 'translate-x-16 opacity-0'
+                }`}
+              >
               <div className="flex gap-6">
                 <img
                   src={exp.photo}
@@ -81,7 +118,8 @@ export default function Experience() {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
