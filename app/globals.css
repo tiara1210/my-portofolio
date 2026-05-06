@@ -1,0 +1,162 @@
+:root {
+  --bg-dark: #0f172a;
+  --bg-darker: #020617;
+
+  --orange: #ff7a00;
+  --orange-light: #ff9a3c;
+
+  --text: #ffffff;
+  --text-muted: #94a3b8;
+
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(170deg, #020617 30%, #e25555 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 100px 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-bg {
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 40%,
+    #ff7a00 100%
+  );
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--orange), var(--orange-light));
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 122, 0, 0.4);
+}
+
+.btn-outline {
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--orange);
+  color: white;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 122, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-bar {
+  height: 6px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange), var(--orange-light));
+}
+
+.glow {
+  box-shadow: 0 0 50px rgba(255, 122, 0, 0.2);
+}
+
+.img-rounded {
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
