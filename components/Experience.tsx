@@ -43,7 +43,7 @@ export default function Experience() {
       title: "Cashier Web App",
       company: "External Project",
       description: "Developed a cashier application for external use. Implemented core features and handled system functionality based on user needs.",
-      photo: "/assets/photos/foto 1.png",
+      photo: "/assets/photos/cashier.png",
     },
     {
       period: "2025",
@@ -54,14 +54,14 @@ export default function Experience() {
     },
     {
       period: "2025",
-      title: "Web Development Instructor",
+      title: "Web Development Teaching assistant",
       company: "Bengkel Koding",
       description: "Taught Laravel fundamentals and guided students in building web applications.",
       photo: "/assets/photos/asisten.jpeg",
     },
     {
       period: "2025",
-      title: "Web Developer Certification Handler",
+      title: "Web Developer Certification Bimbingan Karir",
       company: "Career Guidance Course",
       description: "Managed and assisted certification process for web development students.",
       photo: "/assets/photos/bimkar.jpeg",
@@ -70,15 +70,22 @@ export default function Experience() {
       period: "2024",
       title: "Web Developer Training",
       company: "BTNG",
-      description: "",
-      photo: "/assets/photos/foto 1.png",
+      description: "Completed intensive web development training program. Learned HTML, CSS, JavaScript, and React basics. Built several hands-on projects including a personal portfolio website.",
+      photo: "/assets/photos/dev.png",
+    },
+    {
+      period: "2023",
+      title: "Scratch Programming Instructor",
+      company: "Elementary School",
+      description: "Taught Scratch programming to elementary school children. Introduced basic programming concepts through interactive games and animations.",
+      photo: "/assets/photos/scratch.png",
     },
     {
       period: "2023",
       title: "Mobile Development Training",
       company: "BTNG",
-      description: "",
-      photo: "/assets/photos/foto 1.png",
+      description: "Learned mobile app development fundamentals using Flutter. Created cross-platform mobile applications and learned state management with Provider.",
+      photo: "/assets/photos/mobile.png",
     },
   ];
 
