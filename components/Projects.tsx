@@ -75,7 +75,7 @@ export default function Projects() {
             <Link
               href={`/projects/${project.slug}`}
               key={index}
-              className="!bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block"
+              className="!bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block"
             >
               <div className="relative h-48 w-full bg-gray-100">
                 <Image
