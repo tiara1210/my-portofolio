@@ -1,49 +1,48 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'BNN System',
-    description: 'Sistem informasi Badan Narkotika Nasional untuk pendataan dan monitoring kegiatan.',
-    role: 'Full Stack',
-    image: '/assets/photos/developer.jpeg',
+    title: 'Sistem Asesmen Terpadu BNN Jawa Tengah',
+    slug: 'bnn-system',
+    description: 'Integrated assessment system for drug users assessment process with multiple user roles.',
+    role: 'Frontend developer',
+    image: '/assets/project/bnn.png',
     tech: ['Next.js', 'PostgreSQL', 'Docker'],
   },
   {
-    title: 'Polyclinic System',
-    description: 'Sistem manajemen klinik untuk pendaftaran pasien dan data rekam medis.',
-    role: 'Frontend Dev',
-    image: '/assets/photos/developer.jpeg',
-    tech: ['Next.js', 'Tailwind CSS'],
+    title: 'Poliklinik',
+    slug: 'polyclinic-system',
+    description: 'Polyclinic management system for healthcare operations including registration and medical records.',
+    role: 'Full Stack',
+    image: '/assets/project/poliklinik.png',
+    tech: ['Laravel', 'MySQL', 'Tailwind CSS'],
   },
   {
     title: 'Alumni Platform',
-    description: 'Platform alumni untuk networking dan lowongan kerja.',
+    slug: 'alumni-platform',
+    description: 'Career & networking platform connecting alumni, students, and industry partners.',
     role: 'Full Stack',
-    image: '/assets/photos/projectu24.jpeg',
+    image: '/assets/project/alumni.png',
     tech: ['Next.js', 'Laravel', 'MySQL'],
   },
   {
     title: 'BengTix',
-    description: 'Website ticketing untuk acara dan kegiatan Bengkel Koding.',
+    slug: 'bengtix',
+    description: 'Event ticketing platform for discovering events, purchasing tickets, and managing bookings.',
     role: 'Full Stack',
-    image: '/assets/photos/asisten.jpeg',
+    image: '/assets/project/shop.png',
     tech: ['Laravel', 'MySQL', 'Tailwind CSS'],
   },
   {
     title: 'Cashier App',
-    description: 'Aplikasi kasir untuk UMKM dengan fitur laporan penjualan.',
+    slug: 'cashier-app',
+    description: 'Point of sale system for retail operations including sales transactions and inventory management.',
     role: 'Full Stack',
-    image: '/assets/photos/cashier.png',
-    tech: ['Next.js', 'PostgreSQL'],
-  },
-  {
-    title: 'Career Guidance Portal',
-    description: 'Portal bimbingan karir untuk students dalam sertifikasi web development.',
-    role: 'Frontend Dev',
-    image: '/assets/photos/bimkar.jpeg',
-    tech: ['React', 'Tailwind CSS'],
+    image: '/assets/project/chasier.jpg',
+    tech: ['Laravel', 'MySQL', 'Bootstrap'],
   },
 ];
 
@@ -57,9 +56,10 @@ export default function Projects() {
         </div>
         <div className="grid grid-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <Link
+              href={`/projects/${project.slug}`}
               key={index}
-              className="card !bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="card !bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block"
             >
               <div className="relative h-48 w-full bg-gray-100">
                 <Image
@@ -89,13 +89,13 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <button className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red to-orange-light text-white text-sm font-medium rounded-lg hover:opacity-90 transition-opacity">
+                  <span className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red to-orange-light text-white text-sm font-medium rounded-lg hover:opacity-90 transition-opacity">
+                    View Details
                     <ArrowUpRight className="w-4 h-4" />
-                    Demo
-                  </button>
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
