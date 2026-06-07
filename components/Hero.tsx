@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero-bg section relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-0">
+    <section className="hero-bg section relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-0">
       <div
         className="absolute bottom-0 left-0 right-0 h-32"
         style={{

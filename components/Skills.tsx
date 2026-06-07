@@ -29,7 +29,7 @@ function SkillCard({
   index: number;
 }) {
   return (
-    <div className="flex-shrink-0 bg-white px-8 py-6 flex flex-col items-center gap-3 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer min-w-[160px] rounded-2xl">
+    <div className="flex-shrink-0 bg-white border border-gray-200 px-8 py-6 flex flex-col items-center gap-3 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer min-w-[160px] rounded-2xl">
       <Image
         src={skill.img}
         alt={skill.name}

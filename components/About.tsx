@@ -27,7 +27,7 @@ export default function About() {
             I'm passionate about building clean user interfaces, solving
             real-world problems, and continuously growing as a developer.
           </p>
-          <div className="mt-8 p-6 bg-white/5 rounded-xl border border-white/10">
+          <div className="mt-8 p-6 bg-transparent rounded-xl border border-white">
             <h3 className="text-xl font-semibold mb-4">Education</h3>
             <div className="space-y-2 text-gray-300">
               <p className="font-medium">Dian Nuswantoro University</p>
