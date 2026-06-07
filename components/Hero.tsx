@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero-bg section relative min-h-screen flex items-center overflow-hidden">
+    <section className="hero-bg section relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-0">
       <div
         className="absolute bottom-0 left-0 right-0 h-32"
         style={{
@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
           <div className="text-center md:text-left order-1 md:order-1">
-            <h1 className="text-4xl md:text-6 xl">Hi, I'm Tiara Sofa</h1>
+            <h1 className="text-4xl md:text-6xl">Hi, I'm Tiara Sofa</h1>
             <p className="text-2xl md:text-3xl mt-2">Frontend Developer</p>
             <p className="mt-4 text-gray-300 max-w-md">
               Frontend Developer who builds modern web apps with clean UI,
