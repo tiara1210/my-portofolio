@@ -14,7 +14,7 @@ const projects = [
     tech: ["Figma", "UI/UX Design", "Dashboard", "Sustainability"],
     year: "2026",
     duration: "1 week",
-    teamSize: 1,
+    teamSize: 2,
     features: [
       "Hero section with sustainability concept",
       "Collection scheduling interface",
@@ -37,7 +37,7 @@ const projects = [
     image: "/assets/project/akuaponik.png",
     tech: ["Figma", "UI/UX Design", "Agritech", "Dashboard Design"],
     year: "2026",
-    duration: "1 week",
+    duration: "1 day",
     teamSize: 1,
     features: [
       "Hero section with aquaponics concept",
@@ -344,7 +344,9 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
                 className={`px-3 py-1 text-sm font-medium rounded-full ${
                   project.role === "Full Stack"
                     ? "bg-green-500 text-white"
-                    : "bg-blue-500 text-white"
+                    : project.role === "Frontend developer"
+                    ? "bg-blue-500 text-white"
+                    : "bg-purple-500 text-white"
                 }`}
               >
                 {project.role}

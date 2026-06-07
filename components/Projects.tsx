@@ -96,7 +96,9 @@ export default function Projects() {
                   <span className={`px-3 py-1 text-xs font-medium rounded-full ${
                     project.role === 'Full Stack'
                       ? 'bg-green-500 text-white'
-                      : 'bg-blue-500 text-white'
+                      : project.role === 'Frontend developer'
+                      ? 'bg-blue-500 text-white'
+                      : 'bg-purple-500 text-white'
                   }`}>
                     {project.role}
                   </span>
