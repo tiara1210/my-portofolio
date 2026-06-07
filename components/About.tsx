@@ -40,7 +40,7 @@ export default function About() {
 
       <div className="absolute left-8 top-1/4 animate-float-slow">
         <Link
-          href="https://github.com/yourusername"
+          href="https://github.com/tiara1210"
           target="_blank"
           rel="noopener noreferrer"
           className="block p-4 bg-white/10 rounded-full border border-white/20 hover:bg-white/30 hover:border-white/40 hover:scale-110 transition-all duration-300 group"
@@ -53,7 +53,7 @@ export default function About() {
 
       <div className="absolute right-8 top-1/3 animate-float">
         <Link
-          href="https://linkedin.com/in/yourprofile"
+          href="https://linkedin.com/in/tiarasofa12"
           target="_blank"
           rel="noopener noreferrer"
           className="block p-4 bg-white/10 rounded-full border border-white/20 hover:bg-blue-500/30 hover:border-blue-400/40 hover:scale-110 transition-all duration-300 group"
