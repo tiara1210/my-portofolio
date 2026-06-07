@@ -270,6 +270,36 @@ const projects = [
     details:
       "Modern cashier application for Indonesian SMEs with complete features for sales reports and inventory management.",
   },
+  {
+    title: "Shop - Online Marketplace",
+    slug: "shop",
+    description:
+      "Developed a web-based e-commerce platform for online buying and selling of goods. The system includes product catalog management, shopping cart, order processing, and discount management features.",
+    role: "Full Stack",
+    image: "/assets/project/shop.png",
+    tech: ["CodeIgniter 4", "PHP", "MySQL", "Bootstrap", "JavaScript"],
+    year: "2024",
+    duration: "2 weeks",
+    teamSize: 1,
+    features: [
+      "Product catalog management",
+      "Category management",
+      "Shopping cart system",
+      "User authentication",
+      "Order management",
+      "Discount/promo code system",
+      "Payment integration",
+      "Transaction history",
+      "Product search and filtering",
+      "Shopping cart persistence",
+      "Order status tracking",
+      "Admin dashboard",
+      "Sales reporting",
+    ],
+    demoUrl: "https://toko.infinityfree.me/",
+    details:
+      "E-commerce website built with CodeIgniter 4 and Bootstrap. Features include product management, shopping cart, order processing, and discount management for online shopping.",
+  },
 ];
 
 interface ProjectDetailProps {

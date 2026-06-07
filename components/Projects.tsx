@@ -49,7 +49,7 @@ const projects = [
     slug: 'bengtix',
     description: 'Event ticketing platform for discovering events, purchasing tickets, and managing bookings.',
     role: 'Full Stack',
-    image: '/assets/project/shop.png',
+    image: '/assets/project/bengtix.png',
     tech: ['Laravel', 'MySQL', 'Tailwind CSS'],
   },
   {
@@ -59,6 +59,14 @@ const projects = [
     role: 'Full Stack',
     image: '/assets/project/chasier.jpg',
     tech: ['Laravel', 'MySQL', 'Bootstrap'],
+  },
+  {
+    title: 'Shop - Online Marketplace',
+    slug: 'shop',
+    description: 'E-commerce website for buying and selling goods online with discount management features.',
+    role: 'Full Stack',
+    image: '/assets/project/shop.png',
+    tech: ['CodeIgniter 4', 'MySQL', 'Bootstrap'],
   },
 ];
 
