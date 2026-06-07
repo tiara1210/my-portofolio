@@ -7,20 +7,38 @@ const certificates = [
   {
     name: "CCNA: Intorduction to Networks",
     issuer: "Cisco",
-    date: "2024",
+    date: "2025",
     file: "/assets/certif/CCNA.jpg",
   },
   {
-    name: "IBM and ISC2 Cybersecurity Specialist",
-    issuer: "Coursera",
-    date: "2024",
-    file: "/assets/certif/coursera1.jpg",
+    name: "Certification schema of associate Data Cientist",
+    issuer: "BNSP",
+    date: "2025",
+    file: "/assets/certif/data.png",
+  },
+  {
+    name: "Certification schema of web developer",
+    issuer: "BNSP",
+    date: "2025",
+    file: "/assets/certif/web.png",
   },
   {
     name: "IBM Machine Learning",
     issuer: "Coursera",
-    date: "2024",
+    date: "2026",
     file: "/assets/certif/coursera2.jpg",
+  },
+  {
+    name: "Genetic Algorithm",
+    issuer: "Bengkel Koding",
+    date: "2025",
+    file: "/assets/certif/genetic.png",
+  },
+  {
+    name: "IBM and ISC2 Cybersecurity Specialist",
+    issuer: "Coursera",
+    date: "2026",
+    file: "/assets/certif/coursera1.jpg",
   },
 ];
 
