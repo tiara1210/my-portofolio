@@ -1,33 +1,45 @@
-'use client';
-import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+"use client";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 const skills = [
-  { name: 'Next.js', img: '/assets/skills/Nextjs.png' },
-  { name: 'React', img: '/assets/skills/react.png' },
-  { name: 'TypeScript', img: '/assets/skills/typescript.svg' },
-  { name: 'JavaScript', img: '/assets/skills/javascript.png' },
-  { name: 'Tailwind CSS', img: '/assets/skills/tailwindcss.png' },
-  { name: 'Radix UI', img: '/assets/skills/radix.webp' },
-  { name: 'Vite', img: '/assets/skills/vite.png' },
-  { name: 'Laravel', img: '/assets/skills/laravel.png' },
-  { name: 'Figma', img: '/assets/skills/figma.png' },
-  { name: 'MySQL', img: '/assets/skills/mysql.png' },
-  { name: 'PostgreSQL', img: '/assets/skills/postgresql.png' },
-  { name: 'Docker', img: '/assets/skills/Docker.png' },
-  { name: 'VS Code', img: '/assets/skills/vscode.png' },
-  { name: 'GitHub', img: '/assets/skills/GitHub-Logo.png' },
-  { name: 'Shadcn UI', img: '/assets/skills/shadcn.png' },
-  { name: 'DaisyUI', img: '/assets/skills/daisyui.png' },
+  { name: "Next.js", img: "/assets/skills/Nextjs.png" },
+  { name: "React", img: "/assets/skills/react.png" },
+  { name: "TypeScript", img: "/assets/skills/typescript.svg" },
+  { name: "JavaScript", img: "/assets/skills/javascript.png" },
+  { name: "Tailwind CSS", img: "/assets/skills/tailwindcss.png" },
+  { name: "Radix UI", img: "/assets/skills/radix.webp" },
+  { name: "Vite", img: "/assets/skills/vite.png" },
+  { name: "Laravel", img: "/assets/skills/laravel.png" },
+  { name: "Figma", img: "/assets/skills/figma.png" },
+  { name: "MySQL", img: "/assets/skills/mysql.png" },
+  { name: "PostgreSQL", img: "/assets/skills/postgresql.png" },
+  { name: "Docker", img: "/assets/skills/Docker.png" },
+  { name: "VS Code", img: "/assets/skills/vscode.png" },
+  { name: "GitHub", img: "/assets/skills/GitHub-Logo.png" },
+  { name: "Shadcn UI", img: "/assets/skills/shadcn.png" },
+  { name: "DaisyUI", img: "/assets/skills/daisyui.png" },
 ];
 
-function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number }) {
+function SkillCard({
+  skill,
+  index,
+}: {
+  skill: (typeof skills)[0];
+  index: number;
+}) {
   return (
-    <div
-      className="flex-shrink-0 !bg-white px-8 py-6 flex flex-col items-center gap-3 border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer min-w-[160px] rounded-2xl"
-    >
-      <Image src={skill.img} alt={skill.name} width={40} height={40} className="w-16 h-16 object-contain" />
-      <span className="text-base font-semibold text-gray-900 whitespace-nowrap">{skill.name}</span>
+    <div className="flex-shrink-0 !bg-white px-8 py-6 flex flex-col items-center gap-3 border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer min-w-[160px] rounded-2xl">
+      <Image
+        src={skill.img}
+        alt={skill.name}
+        width={40}
+        height={40}
+        className="w-16 h-16 object-contain"
+      />
+      <span className="text-base font-semibold text-gray-900 whitespace-nowrap">
+        {skill.name}
+      </span>
     </div>
   );
 }
@@ -91,7 +103,10 @@ export default function Skills() {
           <div
             ref={scrollRef1}
             className="flex gap-6 overflow-hidden"
-            style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+            }}
           >
             {duplicatedSkills.map((skill, index) => (
               <SkillCard key={`row1-${index}`} skill={skill} index={index} />
@@ -100,7 +115,10 @@ export default function Skills() {
           <div
             ref={scrollRef2}
             className="flex gap-6 overflow-hidden"
-            style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+            }}
           >
             {duplicatedSkills.map((skill, index) => (
               <SkillCard key={`row2-${index}`} skill={skill} index={index} />

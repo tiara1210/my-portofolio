@@ -5,6 +5,22 @@ import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
+    title: 'Greenben - Minyak Jelantah Collection',
+    slug: 'greenben',
+    description: 'Landing page design for used cooking oil collection platform that can be transformed into various creative and useful products.',
+    role: 'Designer',
+    image: '/assets/project/greenben.png',
+    tech: ['Figma', 'UI/UX Design', 'Sustainability'],
+  },
+  {
+    title: 'Akuaponik - Smart Aquaponics System',
+    slug: 'akuaponik',
+    description: 'Landing page design for smart aquaponics monitoring system with fish and plant health tracking.',
+    role: 'Designer',
+    image: '/assets/project/akuaponik.png',
+    tech: ['Figma', 'UI/UX Design', 'Agritech'],
+  },
+  {
     title: 'Sistem Asesmen Terpadu BNN Jawa Tengah',
     slug: 'bnn-system',
     description: 'Integrated assessment system for drug users assessment process with multiple user roles.',

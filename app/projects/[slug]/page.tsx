@@ -5,6 +5,54 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "Greenben - Minyak Jelantah Collection",
+    slug: "greenben",
+    description:
+      "Landing page design for a platform that collects and manages used cooking oil (minyak jelantah) to be transformed into various creative and useful products. The design features waste oil collection scheduling, partner dashboard, and sustainability impact tracking.",
+    role: "Designer",
+    image: "/assets/project/greenben.png",
+    tech: ["Figma", "UI/UX Design", "Dashboard", "Sustainability"],
+    year: "2026",
+    duration: "1 week",
+    teamSize: 1,
+    features: [
+      "Hero section with sustainability concept",
+      "Collection scheduling interface",
+      "Partner dashboard mockup",
+      "Impact tracking visualization",
+      "Mobile responsive layout",
+      "Call-to-action sections",
+    ],
+    demoUrl:
+      "https://www.figma.com/design/P8Rz5RPowZ8wbXbGTV88QG/Aplikasi?t=BHZUTLTG0Z6NnnWa-1",
+    details:
+      "UI/UX design project for used cooking oil collection platform. The design emphasizes clean interface and environmental impact visualization.",
+  },
+  {
+    title: "Akuaponik - Smart Aquaponics System",
+    slug: "akuaponik",
+    description:
+      "Landing page design for a smart aquaponics monitoring system. The design showcases fish and plant health tracking, water quality monitoring, and automated farming controls.",
+    role: "Designer",
+    image: "/assets/project/akuaponik.png",
+    tech: ["Figma", "UI/UX Design", "Agritech", "Dashboard Design"],
+    year: "2026",
+    duration: "1 week",
+    teamSize: 1,
+    features: [
+      "Hero section with aquaponics concept",
+      "Fish health tracking interface mockup",
+      "Plant monitoring dashboard design",
+      "Water quality indicators",
+      "Automated control panels",
+      "Mobile-first responsive design",
+    ],
+    demoUrl:
+      "https://www.figma.com/design/1VMU6hKGLvTqsF2BJLTGcf/AKUAPONIK?node-id=0-1&t=BHZUTLTG0Z6NnnWa-1",
+    details:
+      "UI/UX design project for a smart aquaponics system. The design focuses on clean, modern aesthetics suitable for sustainable agriculture technology.",
+  },
+  {
     title: "Sistem Asesmen Terpadu BNN Jawa Tengah",
     slug: "bnn-system",
     description:
