@@ -1,9 +1,21 @@
 "use client";
-import { Award, FileText, Download } from "lucide-react";
+import { Award, FileText } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 const certificates = [
+  {
+    name: "Associate Data Scientist Vocational School Graduate Academy Digital Talent Scholarship 2025",
+    issuer: "VGSA",
+    date: "2025",
+    file: "/assets/certif/VGSA.jpg",
+  },
+  {
+    name: "Genetic Algorithm",
+    issuer: "Bengkel Koding",
+    date: "2025",
+    file: "/assets/certif/genetic.png",
+  },
   {
     name: "CCNA: Intorduction to Networks",
     issuer: "Cisco",
@@ -27,12 +39,6 @@ const certificates = [
     issuer: "Coursera",
     date: "2026",
     file: "/assets/certif/coursera2.jpg",
-  },
-  {
-    name: "Genetic Algorithm",
-    issuer: "Bengkel Koding",
-    date: "2025",
-    file: "/assets/certif/genetic.png",
   },
   {
     name: "IBM and ISC2 Cybersecurity Specialist",

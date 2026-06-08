@@ -8,6 +8,7 @@ const navLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Certificates', href: '#certificates' },
+  { name: 'Download CV', href: '/assets/CV.pdf' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -36,7 +37,8 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className={link.name === 'Contact' ? 'navbar-btn-contact' : 'navbar-link'}
+              download={link.name === 'Download CV' ? 'CV_TIARASOFA' : undefined}
+              className={link.name === 'Contact' ? 'navbar-btn-contact' : link.name === 'Download CV' ? 'navbar-btn-download' : 'navbar-link'}
             >
               {link.name}
             </a>
@@ -57,6 +59,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
+              download={link.name === 'Download CV' ? 'CV_TIARASOFA' : undefined}
               className="navbar-mobile-link"
               onClick={() => setIsOpen(false)}
             >

@@ -265,6 +265,21 @@ p {
   box-shadow: 0 4px 15px rgba(255, 77, 79, 0.3);
 }
 
+.navbar-btn-download {
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(to right, var(--red), var(--orange-light));
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar-btn-download:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 15px rgba(255, 77, 79, 0.3);
+}
+
 .navbar-mobile-btn {
   display: none;
   width: 40px;

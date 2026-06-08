@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { Download } from "lucide-react";
 
 export default function About() {
   return (
@@ -34,6 +35,17 @@ export default function About() {
               <p>informatics engineering</p>
               <p>GPA: 3.74 / 4.00</p>
             </div>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="/assets/CV.pdf"
+              download="CV_TIARASOFA"
+              className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-red to-orange-light text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+            >
+              <Download className="w-5 h-5" />
+              Download CV
+            </a>
           </div>
         </div>
       </div>
