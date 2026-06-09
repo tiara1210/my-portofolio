@@ -25,7 +25,7 @@ export default function Hero() {
             <p className="text-2xl md:text-3xl mt-2">Frontend Developer</p>
             <p className="mt-4 text-gray-300 max-w-md">
               Frontend Developer who builds modern web apps with clean UI,
-              scalable systems, and real-world problem solving.
+              scalable systems, and real world problem solving.
             </p>
             <div className="flex gap-4 mt-8 justify-center md:justify-start">
               <a href="#contact" className="btn-primary">Contact Me</a>

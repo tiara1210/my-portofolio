@@ -15,18 +15,20 @@ export default function About() {
         </div>
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I'm Ara, a frontend developer who builds modern and scalable web
+            I'm Tiara, a frontend developer who builds modern and scalable web
             applications using Next.js and REST API architecture.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I've worked on real-world systems such as cashier applications,
-            alumni platforms, and internal tools. I also have experience as a
-            web development instructor and mentor, helping students understand
-            Laravel and develop their own applications.
+            I've worked on real-world systems such as a cashier application, an
+            alumni platform, the Central Java National Narcotics Agency's
+            Integrated Assessment System (SAT), and campus website projects. I
+            also have experience as a web development instructor and mentor,
+            helping students understand Laravel and develop their own
+            applications.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
             I'm passionate about building clean user interfaces, solving
-            real-world problems, and continuously growing as a developer.
+            real-world problems, and continually growing as a developer.
           </p>
           <div className="mt-8 p-6 bg-transparent rounded-xl border border-white">
             <h3 className="text-xl font-semibold mb-4">Education</h3>
