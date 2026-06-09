@@ -19,7 +19,7 @@ export default function About() {
             applications using Next.js and REST API architecture.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I've worked on real-world systems such as a cashier application, an
+            I've worked on real world systems such as a cashier application, an
             alumni platform, the Central Java National Narcotics Agency's
             Integrated Assessment System (SAT), and campus website projects. I
             also have experience as a web development instructor and mentor,
@@ -28,7 +28,7 @@ export default function About() {
           </p>
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
             I'm passionate about building clean user interfaces, solving
-            real-world problems, and continually growing as a developer.
+            real world problems, and continually growing as a developer.
           </p>
           <div className="mt-8 p-6 bg-transparent rounded-xl border border-white">
             <h3 className="text-xl font-semibold mb-4">Education</h3>
