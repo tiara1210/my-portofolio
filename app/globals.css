@@ -195,7 +195,7 @@ p {
   right: 0;
   z-index: 50;
   transition: all 0.3s ease;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(12px);
   padding: 20px 10%;
 }
@@ -328,6 +328,25 @@ p {
 
   .navbar-mobile-menu {
     display: flex;
+  }
+
+  .hero-bg {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-bg {
+    padding-top: 100px;
+    align-items: flex-start !important;
+  }
+
+  .hero-bg .container {
+    padding-top: 80px;
+  }
+
+  .hero-bg .flex {
+    align-items: flex-start !important;
   }
 }
 
