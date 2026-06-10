@@ -25,7 +25,7 @@ export default function Experience() {
 
   const experiences = [
     {
-      period: "September 20205 - Present",
+      period: "September 2025 - Present",
       title: "Developer",
       company: "Bengkel Koding",
       description: "Handled multiple projects including BNN system, Polyclinic system, and Alumni platform. Worked on frontend development, API integration, and system implementation.",
@@ -90,10 +90,10 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="section relative min-h-screen">
-      <div className="container">
-        <h2 className="text-4xl font-bold mb-12">Experience</h2>
-        <div className="grid grid-2 gap-6">
+    <section id="experience" className="section relative min-h-screen flex items-center justify-center py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-16 text-center text-white">Experience</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto items-stretch">
           {experiences.map((exp, index) => {
             const isLeft = index % 2 === 0;
             const isVisible = visibleCards.includes(index);
@@ -101,26 +101,31 @@ export default function Experience() {
               <div
                 key={index}
                 data-index={index}
-                className={`experience-card card p-6 transition-all duration-500 ${
+                className={`experience-card card p-8 transition-all duration-700 h-full flex flex-col justify-between ${
                   isVisible
-                    ? 'translate-x-0 opacity-100'
-                    : isLeft
-                    ? '-translate-x-16 opacity-0'
-                    : 'translate-x-16 opacity-0'
+                    ? 'translate-y-0 opacity-100'
+                    : 'translate-y-12 opacity-0'
                 }`}
               >
-              <div className="flex gap-6">
-                <img
-                  src={exp.photo}
-                  alt={exp.title}
-                  className="w-40 h-28 object-cover rounded-xl"
-                />
-                <div className="flex-1">
-                  <span className="text-red font-medium text-sm">{exp.period}</span>
-                  <h3 className="text-xl font-semibold text-white mt-1">{exp.title}</h3>
-                  <span className="text-gray-400 text-sm">{exp.company}</span>
+              <div className="flex gap-6 flex-col sm:flex-row items-start">
+                <div className="shrink-0 w-full sm:w-32 h-32 rounded-2xl overflow-hidden border border-white/10">
+                  <img
+                    src={exp.photo}
+                    alt={exp.title}
+                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="flex-1 space-y-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <span className="text-red font-semibold text-xs tracking-wider uppercase px-3 py-1 bg-red/10 rounded-full border border-red/20">{exp.period}</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white leading-tight">{exp.title}</h3>
+                  <div className="flex items-center gap-2 text-gray-400 font-medium text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red/60"></span>
+                    {exp.company}
+                  </div>
                   {exp.description && (
-                    <p className="text-gray-400 mt-2 text-sm">{exp.description}</p>
+                    <p className="text-gray-400 mt-4 text-sm leading-relaxed">{exp.description}</p>
                   )}
                 </div>
               </div>

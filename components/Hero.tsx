@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero-bg section relative min-h-screen flex items-start md:items-center overflow-hidden pt-24 md:pt-0">
+    <section className="hero-bg section relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-0">
       <div
         className="absolute bottom-0 left-0 right-0 h-32"
         style={{
@@ -19,11 +19,11 @@ export default function Hero() {
         }}
       />
       <div className="container relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12 md:gap-0">
           <div className="text-center md:text-left order-1 md:order-1">
-            <h1 className="text-4xl md:text-6xl">Hi, I'm Tiara Sofa</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm Tiara Sofa</h1>
             <p className="text-2xl md:text-3xl mt-2">Frontend Developer</p>
-            <p className="mt-4 text-gray-300 max-w-md">
+            <p className="mt-4 text-gray-300 max-w-md mx-auto md:mx-0">
               Frontend Developer who builds modern web apps with clean UI,
               scalable systems, and real world problem solving.
             </p>
@@ -32,10 +32,10 @@ export default function Hero() {
               <a href="#projects" className="btn-outline">View Projects</a>
             </div>
           </div>
-          <div className="flex-shrink-0 order-2 md:order-2">
+          <div className="flex-shrink-0 order-2 md:order-2 w-full md:w-auto flex justify-center md:justify-end">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red to-red-light blur-sm opacity-50"></div>
-              <div className="relative w-[350px] md:w-[500px] h-[350px] md:h-[500px] rounded-full overflow-hidden">
+              <div className="relative w-[300px] sm:w-[350px] md:w-[500px] h-[300px] sm:h-[350px] md:h-[500px] rounded-full overflow-hidden">
                 <img
                   src="/assets/photos/foto 1.png"
                   alt="Tiara Sofa"

@@ -2,7 +2,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="py-8 px-10% border-t border-white/10">
+    <footer className="py-8 border-t border-white/10">
       <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-gray-400 text-sm">
           © {year} Tiara Sofa. All rights reserved.

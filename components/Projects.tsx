@@ -78,12 +78,12 @@ export default function Projects() {
           <h2 className="text-4xl font-bold mb-4">Projects</h2>
           <div className="h-1 w-32 mx-auto rounded-full bg-gradient-to-r from-red to-orange-light"></div>
         </div>
-        <div className="grid grid-3 gap-8">
+        <div className="grid grid-3 gap-8 w-full max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Link
               href={`/projects/${project.slug}`}
               key={index}
-              className="!bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block"
+              className="!bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block w-full"
             >
               <div className="relative h-48 w-full bg-gray-100">
                 <Image
