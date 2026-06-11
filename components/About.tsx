@@ -52,15 +52,15 @@ export default function About() {
         </div>
       </div>
 
-      <div className="absolute left-8 top-1/4 animate-float-slow">
+      <div className="absolute left-2 md:left-8 top-1/4 animate-float-slow">
         <Link
           href="https://github.com/tiara1210"
           target="_blank"
           rel="noopener noreferrer"
-          className="block p-4 bg-white/10 rounded-full border border-white/20 hover:bg-white/30 hover:border-white/40 hover:scale-110 transition-all duration-300 group"
+          className="block p-3 md:p-4 bg-white/10 rounded-full border border-white/20 hover:bg-white/30 hover:border-white/40 hover:scale-110 transition-all duration-300 group"
         >
           <svg
-            className="w-8 h-8 text-white group-hover:text-gray-900 transition-colors duration-300"
+            className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-gray-900 transition-colors duration-300"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -69,15 +69,15 @@ export default function About() {
         </Link>
       </div>
 
-      <div className="absolute right-8 top-1/3 animate-float">
+      <div className="absolute right-2 md:right-8 top-1/3 animate-float">
         <Link
           href="https://linkedin.com/in/tiarasofa12"
           target="_blank"
           rel="noopener noreferrer"
-          className="block p-4 bg-white/10 rounded-full border border-white/20 hover:bg-blue-500/30 hover:border-blue-400/40 hover:scale-110 transition-all duration-300 group"
+          className="block p-3 md:p-4 bg-white/10 rounded-full border border-white/20 hover:bg-blue-500/30 hover:border-blue-400/40 hover:scale-110 transition-all duration-300 group"
         >
           <svg
-            className="w-8 h-8 text-white group-hover:text-blue-400 transition-colors duration-300"
+            className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-blue-400 transition-colors duration-300"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -86,15 +86,15 @@ export default function About() {
         </Link>
       </div>
 
-      <div className="absolute left-12 bottom-1/4 animate-float-slower">
+      <div className="absolute left-4 md:left-12 bottom-1/4 animate-float-slower">
         <Link
           href="https://instagram.com/tiara_ssss"
           target="_blank"
           rel="noopener noreferrer"
-          className="block p-4 bg-white/10 rounded-full border border-white/20 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-500 hover:scale-110 transition-all duration-300 group"
+          className="block p-3 md:p-4 bg-white/10 rounded-full border border-white/20 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-500 hover:scale-110 transition-all duration-300 group"
         >
           <svg
-            className="w-8 h-8 text-white group-hover:brightness-110 transition-all duration-300"
+            className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:brightness-110 transition-all duration-300"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
