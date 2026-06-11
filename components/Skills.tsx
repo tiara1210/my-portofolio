@@ -19,6 +19,12 @@ const skills = [
   { name: "GitHub", img: "/assets/skills/GitHub-Logo.png" },
   { name: "Shadcn UI", img: "/assets/skills/shadcn.png" },
   { name: "DaisyUI", img: "/assets/skills/daisyui.png" },
+  { name: "Express", img: "/assets/skills/express.jpg" },
+  { name: "Node.js", img: "/assets/skills/nodejs.jpg" },
+  { name: "Prisma", img: "/assets/skills/prisma.png" },
+  { name: "Redis", img: "/assets/skills/redis.jpg" },
+  { name: "Swagger", img: "/assets/skills/swagger.png" },
+  { name: "TanStack", img: "/assets/skills/tanstack.png" },
 ];
 
 function SkillCard({
