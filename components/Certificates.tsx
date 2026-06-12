@@ -86,8 +86,8 @@ export default function Certificates() {
             </div>
           </div>
 
-          <div className="flex-1 min-h-[600px]">
-            <div className="card bg-white/5 border border-white/10 h-full flex flex-col">
+          <div className="flex-1">
+            <div className="card bg-white/5 border border-white/10 flex flex-col">
               <div className="p-4 border-b border-white/10 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <FileText className="w-5 h-5 text-white/60" />
@@ -97,13 +97,14 @@ export default function Certificates() {
                 </div>
               </div>
 
-              <div className="flex-1 p-4 overflow-hidden">
-                <div className="relative w-full h-full min-h-[500px] rounded-lg bg-white/5">
+              <div className="p-4 overflow-hidden">
+                <div className="relative w-full rounded-lg bg-white/5">
                   <Image
                     src={certificates[selectedCert].file}
                     alt={certificates[selectedCert].name}
-                    fill
-                    className="object-contain rounded-lg"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
               </div>
