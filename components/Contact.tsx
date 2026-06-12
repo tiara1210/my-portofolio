@@ -40,7 +40,7 @@ export default function Contact() {
             Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing.
           </p>
         </div>
-        <div className="card max-w-2xl mx-auto p-8">
+        <div className="card contact-card mx-auto p-4">
           {status === 'success' ? (
             <div className="text-center py-8">
               <p className="text-green-400 text-lg mb-4">Message sent successfully!</p>
@@ -53,37 +53,37 @@ export default function Contact() {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">Your Name</label>
+              <div className="mb-3">
+                <label className="block text-sm font-medium mb-1">Your Name</label>
                 <input
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors"
+                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors"
                   placeholder="Enter your name"
                   required
                   suppressHydrationWarning
                 />
               </div>
-              <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">Email</label>
+              <div className="mb-3">
+                <label className="block text-sm font-medium mb-1">Email</label>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors"
+                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors"
                   placeholder="Enter your email"
                   required
                   suppressHydrationWarning
                 />
               </div>
-              <div className="mb-6">
-                <label className="block text-sm font-medium mb-2">Message</label>
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-1">Message</label>
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  rows={5}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors resize-none"
+                  rows={4}
+                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-red transition-colors resize-none"
                   placeholder="Enter your message"
                   required
                 />

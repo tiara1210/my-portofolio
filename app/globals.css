@@ -181,6 +181,11 @@ p {
   border-color: rgba(255, 122, 0, 0.5);
 }
 
+.contact-card {
+  max-width: 550px !important;
+  margin: 0 auto;
+}
+
 .experience-card:hover {
   transform: translateY(-5px);
 }
