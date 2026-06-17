@@ -32,7 +32,7 @@ export default function Hero() {
             }`}
           >
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Hi, I'm Tiara Sofa</h1>
-            <p className="text-2xl md:text-3xl mt-2 font-medium">Frontend Developer</p>
+            <p className="text-2xl md:text-3xl mt-2 font-medium">Full Stack Developer</p>
             <p className="mt-6 text-gray-300 max-w-md mx-auto md:mx-0 leading-relaxed text-lg">
               Frontend Developer who builds modern web apps with clean UI,
               scalable systems, and real world problem solving.
