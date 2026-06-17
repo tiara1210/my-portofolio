@@ -15,20 +15,29 @@ export default function About() {
         </div>
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I'm Tiara, a frontend developer who builds modern and scalable web
-            applications using Next.js and REST API architecture.
+            I'm Tiara, a full stack developer who builds modern and scalable web
+            applications using Laravel, Next.js, and RESTful API architecture.
           </p>
+
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I've worked on real world systems such as a cashier application, an
-            alumni platform, the Central Java National Narcotics Agency's
-            Integrated Assessment System (SAT), and campus website projects. I
-            also have experience as a web development instructor and mentor,
-            helping students understand Laravel and develop their own
-            applications.
+            I've developed real-world systems including a cashier management
+            platform, an alumni information system, the Integrated Assessment
+            System (SAT) for the Central Java National Narcotics Agency, and
+            various academic and organizational web projects. I enjoy turning
+            ideas into complete digital solutions, from database design and
+            backend development to responsive user interfaces.
           </p>
+
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I'm passionate about building clean user interfaces, solving
-            real world problems, and continually growing as a developer.
+            Beyond development, I have experience as a web development teaching
+            assistant and project mentor, helping students learn Laravel and
+            build their own applications while fostering collaboration and
+            problem-solving skills.
+          </p>
+
+          <p className="text-lg text-gray-300 leading-relaxed">
+            I'm passionate about building impactful products, solving real-world
+            problems, and continuously growing as a software engineer.
           </p>
           <div className="mt-8 p-6 bg-transparent rounded-xl border border-white">
             <h3 className="text-xl font-semibold mb-4">Education</h3>
