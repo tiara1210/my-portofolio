@@ -11,8 +11,10 @@ import {
   Trophy,
   CheckCircle2,
   FileText,
+  Clock,
 } from "lucide-react";
 import Link from "next/link";
+import LivePreviewButton from "@/components/LivePreviewButton";
 
 interface ProjectResult {
   name: string;
@@ -40,6 +42,7 @@ interface Project {
   outcome: string[];
   whatILearned: string[];
   result: ProjectResult[];
+  isProduction?: boolean;
 }
 
 const projects: Project[] = [
@@ -248,6 +251,7 @@ const projects: Project[] = [
       "Centralized Digital Documentation",
     ],
     demoUrl: "https://fe-bnn.jong.my.id/",
+    isProduction: false,
     details: [
       "This application was developed for the National Narcotics Agency to support data management and monitoring of anti-narcotics activities.",
       "I served as the Lead Frontend Developer on this project.",
@@ -677,15 +681,10 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
               </div>
 
               {project.demoUrl && (
-                <a
-                  href={project.demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm font-semibold rounded-xl hover:bg-red transition-all shadow-sm"
-                >
-                  Live Preview
-                  <ArrowUpRight className="w-4 h-4" />
-                </a>
+                <LivePreviewButton
+                  demoUrl={project.demoUrl}
+                  isProduction={project.isProduction}
+                />
               )}
             </div>
 
