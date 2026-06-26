@@ -102,8 +102,9 @@ export default function Skills() {
     <section id="skills" className="section relative min-h-screen">
       <div className="container">
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold mb-4">Skills</h2>
-          <div className="h-1 w-32 mx-auto rounded-full bg-gradient-to-r from-red to-orange-light"></div>
+          <h2 className="text-4xl font-bold" style={{ color: "#1a1a1a" }}>
+            Skills
+          </h2>
         </div>
         <div className="flex flex-col gap-10">
           <div

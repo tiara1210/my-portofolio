@@ -2,11 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: 'Sistem Asesmen Terpadu BNN Jawa Tengah',
-    slug: 'bnn-system',
+    title: "Sistem Asesmen Terpadu BNN Jawa Tengah",
+    slug: "bnn-system",
     description:
       "Integrated assessment system for drug users assessment process with multiple user roles.",
     role: "Frontend developer",
@@ -80,11 +81,41 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="section relative min-h-screen">
+    <section
+      id="projects"
+      className="section relative overflow-hidden min-h-screen"
+    >
+      {/* Animated decorations */}
+      <motion.div
+        animate={{ y: [-8, 8, -8], rotate: [0, 3, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-20 left-10 w-20 h-20 rounded-2xl"
+        style={{ backgroundColor: "#D9CFC7", opacity: 0.5 }}
+      />
+      <motion.div
+        animate={{ y: [8, -8, 8], opacity: [0.3, 0.5, 0.3] }}
+        transition={{ duration: 5, repeat: Infinity }}
+        className="absolute bottom-24 right-16 w-16 h-16 rounded-full"
+        style={{ backgroundColor: "#C9B59C" }}
+      />
+      <motion.div
+        animate={{ x: [-5, 5, -5] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-1/2 right-8 w-10 h-10 rounded-lg"
+        style={{ backgroundColor: "#8B7355", opacity: 0.4 }}
+      />
+      <motion.div
+        animate={{ y: [-6, 6, -6] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-1/3 left-6 w-12 h-12 rounded-xl"
+        style={{ backgroundColor: "#D9CFC7", opacity: 0.6 }}
+      />
+
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Projects</h2>
-          <div className="h-1 w-32 mx-auto rounded-full bg-gradient-to-r from-red to-orange-light"></div>
+          <h2 className="text-4xl font-bold" style={{ color: "#1a1a1a" }}>
+            Featured Projects
+          </h2>
         </div>
         <div className="grid grid-3 gap-8 w-full max-w-6xl mx-auto">
           {projects.map((project, index) => (
