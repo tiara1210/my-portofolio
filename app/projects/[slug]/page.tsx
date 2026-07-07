@@ -73,11 +73,11 @@ const projects: Project[] = [
       "The design emphasizes clean interface and environmental impact visualization.",
     ],
     challenges: [
-      "Design a user friendly mobile application that encourages people to dispose of used cooking oil responsibly by connecting them with nearby collection points and collectors. The platform aims to promote environmental sustainability while providing incentives through a reward-based system.",
-    ],
-    goals: [
       "Many households and restaurants dispose of used cooking oil improperly due to a lack of awareness and access to collection services. As a result, used oil often pollutes waterways and harms the environment.",
       "The challenge is to design a solution that not only makes oil disposal easy but also motivates users to consistently participate through rewards, educational content, and an engaging user experience.",
+    ],
+    goals: [
+      "Design a user friendly mobile application that encourages people to dispose of used cooking oil responsibly by connecting them with nearby collection points and collectors. The platform aims to promote environmental sustainability while providing incentives through a reward-based system.",
     ],
     whatIDid: [
       "Conducted user research to understand common challenges in disposing of used cooking oil.",
@@ -234,7 +234,6 @@ const projects: Project[] = [
       "shadcn/ui",
       "Radix UI",
       "TanStack Query",
-      "Shadcn UI",
     ],
     year: "2025 - 2026",
     date: "December 2025 - Present",
