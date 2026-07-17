@@ -11,7 +11,7 @@ const experiences = [
     photo: "/assets/photos/developer.jpeg",
   },
   {
-    period: "Jan - Present",
+    period: "Jan - Jul 2026",
     title: "Project Mentor",
     company: "Bengkel Koding",
     description:
