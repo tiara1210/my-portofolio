@@ -178,7 +178,7 @@ export default function About() {
                     Semester 6
                   </span>
                   <span className="text-sm" style={{ color: "#86868b" }}>
-                    GPA: 3.74 / 4.00
+                    GPA: 3.78 / 4.00
                   </span>
                 </div>
               </div>

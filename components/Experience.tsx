@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    period: "Sept 2025 - Present",
-    title: "Developer",
+    period: "Sept 2025 - Sept 2026",
+    title: "Web Developer",
     company: "Bengkel Koding",
     description:
       "Handled multiple projects including BNN system, Polyclinic system, and Alumni platform.",
@@ -19,19 +19,51 @@ const experiences = [
     photo: "/assets/photos/projectu24.jpeg",
   },
   {
+    period: "Aug 2025 - Feb 2026",
+    title: "Admin Web Developer",
+    company: "Bengkel Koding",
+    description: "Built BengTix website and managed internal web systems.",
+    photo: "/assets/photos/admin.jpeg",
+  },
+  {
+    period: "Aug 2026",
+    title: "Absensio",
+    company: "PT Talangmas Anugerah Semesta",
+    description:
+      "Developed a face recognition-based attendance system integrated with CCTV for automated employee attendance and real-time monitoring.",
+    photo: "/assets/photos/absensio.jpg",
+  },
+  {
+    period: "Aug 2026",
+    title: "Stratia Chatbot",
+    company: "PT Talangmas Anugerah Semesta",
+    description:
+      "Built an automated chatbot evaluation workflow to analyze response quality and overall chatbot performance.",
+    photo: "/assets/photos/n8n.jpg",
+  },
+  {
+    period: "Sept 2026",
+    title: "User Acceptance Testing UAT",
+    company: "Simbutech",
+    description:
+      "Prepared testing materials, presented system features, and guided users throughout the UAT process.",
+    photo: "/assets/photos/UAT.jpeg",
+  },
+  {
+    period: "Sept - Present",
+    title: "DeepDetection AI",
+    company: "PT Talangmas Anugerah Semesta",
+    description:
+      "Developed an AI-powered platform to detect AI-generated and manipulated content in images and videos.",
+    photo: "/assets/photos/deep.jpg",
+  },
+  {
     period: "May 2026",
     title: "Cashier Web App",
     company: "External Project",
     description:
       "Developed a cashier application for external use. Implemented core features.",
     photo: "/assets/photos/cashier.png",
-  },
-  {
-    period: "Aug 2025 - Feb 2026",
-    title: "Admin Web Developer",
-    company: "Bengkel Koding",
-    description: "Built BengTix website and managed internal web systems.",
-    photo: "/assets/photos/asisten.jpeg",
   },
   {
     period: "Sept 2025 - Jan 2026",
