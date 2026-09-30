@@ -175,7 +175,7 @@ export default function About() {
                 </p>
                 <div className="flex items-center gap-2 flex-wrap mt-2">
                   <span className="px-3 py-1 rounded-full text-xs font-medium" style={{ backgroundColor: "#D9CFC7", color: "#5D4E3C" }}>
-                    Semester 6
+                    Semester 7
                   </span>
                   <span className="text-sm" style={{ color: "#86868b" }}>
                     GPA: 3.78 / 4.00
